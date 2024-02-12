@@ -17,7 +17,7 @@ Route::get('/', function () {
     $comics = config('comics');
     $blueBanner = config('sub-banner');
     return view('home',compact('comics','blueBanner'));
-});
+})->name('homepage');
 
 Route::get('/comics', function () {
     return view('home');
