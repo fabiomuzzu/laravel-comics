@@ -27,8 +27,8 @@
         <div class="col-9">
             <div class="header_menu_container">
                 <ul>
-                    <li>CHARACTERS</li>
-                    <li>COMICS</li>
+                    <li><a class="nav-link active" href="{{ route('characters') }}">CHARACTERS</a></li>
+                    <li><a class="nav-link active" href="{{ route('homepage') }}">COMICS</a></li>
                     <li>MOVIES</li>
                     <li>TV</li>
                     <li>GAMES</li>

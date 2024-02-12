@@ -19,6 +19,11 @@ Route::get('/', function () {
     return view('home',compact('comics','blueBanner'));
 })->name('homepage');
 
-Route::get('/comics', function () {
-    return view('home');
-});
+// /characters è l'url
+// view contiene il nome del file
+// name contiene il nome da inserire nella route
+Route::get('/characters', function () {
+    $character= 'Sezione dei characters...';
+    return view('characters',compact('character'));
+})->name('characters');
+
