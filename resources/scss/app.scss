@@ -62,3 +62,60 @@ header {
         }
     }
 }
+
+main{
+    .btn_relative{
+        position: relative;
+    }
+
+    .my_bg{
+        background-color: #0282F9;
+    }
+
+    .my_border{
+        border-color: #0282F9;;
+    }
+    
+    .current_btn {
+        padding: 15px 20px;
+        border: 2px solid;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 370px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .jumbotron{
+        background-image: url(../../public/img/jumbotron.jpg);
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    
+    main {
+        background-color: black;
+    }
+    
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 0px 90px;
+        .card{
+            color: white;
+            width: calc(100% / 6 - 10px);
+            margin: 30px 5px;
+            height: 300px;
+    
+            img{
+                height: 300px;
+            }
+        }
+    }
+    
+    h2 {
+        color: white;
+    }
+}

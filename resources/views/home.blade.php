@@ -9,12 +9,19 @@
 </head>
 <body>
     @include('partials.header')
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-center">Ciao</h1>
+    <main>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="btn_relative">
+                    <button class="current_btn my_border my_bg">CURRENT SERIES</button> 
+                </div>
             </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="card-container">
+                <SingleComic v-for="comic, index in comics" :key="index" :fumetto="comic"/>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
