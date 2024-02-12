@@ -64,6 +64,8 @@ header {
 }
 
 main{
+    background-color: black;
+
     .btn_relative{
         position: relative;
     }
@@ -93,11 +95,6 @@ main{
         background-repeat: no-repeat;
     }
     
-    
-    main {
-        background-color: black;
-    }
-    
     .card-container {
         display: flex;
         flex-wrap: wrap;
@@ -106,10 +103,12 @@ main{
             width: calc(100% / 6 - 10px);
             margin: 30px 5px;
             height: 300px;
+            color: white;
+            background-color: black;
     
             img{
                 height: 300px;
-                object-fit: cover;
+                object-fit: fill;
             }
         }
     }

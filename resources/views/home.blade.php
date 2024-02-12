@@ -21,8 +21,10 @@
             <div class="card-container">
                 @foreach ($comics as $comic)
                 <div class="card">
+                    <img src="{{ $comic['thumb']}}" alt="">
+                    <div class="card-body">
                         {{$comic['title']}}
-                    
+                    </div>
                 </div>
                 @endforeach
             </div>
