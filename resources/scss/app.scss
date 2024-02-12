@@ -73,12 +73,11 @@ main{
     }
 
     .my_border{
-        border-color: #0282F9;;
+        color: 2px solid transparent;
     }
     
     .current_btn {
         padding: 15px 20px;
-        border: 2px solid;
         color: white;
         cursor: pointer;
         position: absolute;
@@ -104,18 +103,14 @@ main{
         flex-wrap: wrap;
         padding: 50px 0px 90px;
         .card{
-            color: white;
             width: calc(100% / 6 - 10px);
             margin: 30px 5px;
             height: 300px;
     
             img{
                 height: 300px;
+                object-fit: cover;
             }
         }
-    }
-    
-    h2 {
-        color: white;
     }
 }

@@ -19,7 +19,12 @@
         </div>
         <div class="container">
             <div class="card-container">
-                <SingleComic v-for="comic, index in comics" :key="index" :fumetto="comic"/>
+                @foreach ($comics as $comic)
+                <div class="card">
+                        {{$comic['title']}}
+                    
+                </div>
+                @endforeach
             </div>
         </div>
     </main>
