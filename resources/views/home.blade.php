@@ -8,6 +8,7 @@
     @vite('resources/js/app.js')
 </head>
 <body>
+    @include('partials.header')
     <div class="container">
         <div class="row">
             <div class="col-12">

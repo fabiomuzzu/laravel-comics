@@ -1,1 +1,64 @@
 @import '~bootstrap/scss/bootstrap';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    .blue_banner {
+        background-color: #0282f9;
+
+        li:first-child a {
+            padding-right: 50px;
+        }
+
+        li a {
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: small;
+        }
+    }
+
+    .logo {
+        width: 65px;
+        vertical-align: middle;
+    }
+
+    .header_menu_container {
+        vertical-align: middle;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            margin-bottom: 0px;
+
+            li {
+                padding: 18px;
+                border: 3px solid transparent;
+
+                &.active,
+                &:hover {
+                    border-bottom: 3px solid #0282F9;
+
+                }
+
+                a {
+                    color: #1C1C1C;
+                    text-decoration: none;
+
+                    &.active,
+                    &:hover {
+                        color: #0282F9;
+
+                    }
+
+                }
+            }
+
+        }
+    }
+}
