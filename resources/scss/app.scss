@@ -64,7 +64,7 @@ header {
 }
 
 main{
-    background-color: black;
+    background-color: #1C1C1C;
 
     .btn_relative{
         position: relative;
@@ -87,6 +87,24 @@ main{
         font-size: 16px;
         font-weight: 700;
     }
+
+    .load_btn {
+        padding: 15px 30px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .current_btn {
+        padding: 15px 20px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 370px;
+        font-size: 16px;
+        font-weight: 700;
+    }
     
     .jumbotron{
         background-image: url(../../public/img/jumbotron.jpg);
@@ -98,17 +116,33 @@ main{
     .card-container {
         display: flex;
         flex-wrap: wrap;
-        padding: 50px 0px 90px;
-        .card{
+        padding-top: 50px;
+        .my-card{
             width: calc(100% / 6 - 10px);
             margin: 30px 5px;
             height: 300px;
             color: white;
-            background-color: black;
+            background-color: #1C1C1C;
     
             img{
-                height: 300px;
+                height: 240px;
                 object-fit: fill;
+            }
+        }
+    }
+
+   .banner{
+        background-color: #0282f9;
+        color: #fff;
+        li{
+    
+            img{
+                height: 50px;
+            }
+    
+            .title{
+                font-size: smaller;
+                padding: 0 10px;
             }
         }
     }

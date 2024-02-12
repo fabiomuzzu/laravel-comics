@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('comics');
-    return view('home',compact('comics'));
+    $blueBanner = config('sub-banner');
+    return view('home',compact('comics','blueBanner'));
 });
 
 Route::get('/comics', function () {
