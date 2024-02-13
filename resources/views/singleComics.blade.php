@@ -22,13 +22,17 @@
 
 <div class="container">
     <div class="row text-white">
+
+        {{-- Sezione sinistra --}}
         <div class="col-12">
+
             {{-- Immagine  --}}
             <div class="img-container">
                 <img class="img-fluid" src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
             </div>
         </div>
-        <div class="col-9">
+
+        <div class="col-8">
             {{-- Titolo del comics --}}
             <h2 class="">{{$comic['title']}}</h2>
 
@@ -48,11 +52,16 @@
             </div>
 
             {{-- Sezione descrizione --}}
-            <div>
+            <div class="py-4">
                 <p>{{ $comic['description'] }}</p>
             </div>
         </div>
 
+        {{-- Sezione advertisement --}}
+        <div class="col-4">
+            <div class="text-end fw-bold text-secondary">ADVERTISEMENT</div>
+            <img class="w-100" src="{{ Vite::asset('/public/img/adv.jpg') }}" alt="">
+        </div>
     </div>
 </div>
 @endsection
