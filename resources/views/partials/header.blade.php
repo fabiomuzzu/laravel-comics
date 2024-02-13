@@ -27,8 +27,8 @@
         <div class="col-9">
             <div class="header_menu_container">
                 <ul>
-                    <li><a class="nav-link active" href="{{ route('characters') }}">CHARACTERS</a></li>
-                    <li><a class="nav-link active" href="{{ route('homepage') }}">COMICS</a></li>
+                    <li><a class="nav-link {{Route::currentRouteName() === 'characters' ? 'fw-bold' : ''}}" href="{{ route('characters') }}">CHARACTERS</a></li>
+                    <li><a class="nav-link {{Route::currentRouteName() === 'homepage' ? 'fw-bold' : ''}}" href="{{ route('homepage') }}">COMICS</a></li>
                     <li>MOVIES</li>
                     <li>TV</li>
                     <li>GAMES</li>
