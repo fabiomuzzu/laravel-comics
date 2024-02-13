@@ -146,6 +146,20 @@ main{
             }
         }
     }
+
+    .single_blueBanner{
+        height: 80px;
+    }
+
+    .img-container{
+        position: relative;
+        img{
+            height: 300px;
+            object-fit: fill;
+            position: absolute;
+            bottom: 30px;
+        }
+    }
 }
 
 footer{

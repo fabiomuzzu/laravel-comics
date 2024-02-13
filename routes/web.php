@@ -21,6 +21,7 @@ Route::get('/', function () {
 
 // /characters è l'url
 // view contiene il nome del file
+// compact è ciò che passo al file
 // name contiene il nome da inserire nella route
 Route::get('/characters', function () {
     $character= 'Sezione dei characters...';
@@ -37,7 +38,7 @@ Route::get('/cardDetails/{info}', function ($info) {
         }
     };
 
-    dd($comic);
+    return view('singleComics', compact('comic'));
 })->name('detail_card');
 
 
