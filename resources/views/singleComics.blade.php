@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                
+
             </div>
         </div>
     </div>
@@ -21,15 +21,38 @@
 </div>
 
 <div class="container">
-    <div class="row">
+    <div class="row text-white">
         <div class="col-12">
+            {{-- Immagine  --}}
             <div class="img-container">
                 <img class="img-fluid" src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
             </div>
         </div>
-        <div class="col-12">
-            <h2 class="text-white ">{{$comic['title']}}</h2>
+        <div class="col-9">
+            {{-- Titolo del comics --}}
+            <h2 class="">{{$comic['title']}}</h2>
+
+            {{-- Sezione disponibilità e prezzo --}}
+            <div class="d-flex">
+                {{-- Colonna sinistra --}}
+                <div class="bg-success col-8 d-flex py-3">
+                    <span class="px-5">U.S. Price: <span class="text-white">{{ $comic['price'] }}</span></span>
+                    <span class="px-5">AVAILABLE</span>
+                </div>
+                {{-- Colonna destra --}}
+                <div class="bg-success col-4 d-flex justify-content-end py-3 border-start border-black">
+                    <div class="">
+                        <span class="px-2">Check Availability &#9662</span>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Sezione descrizione --}}
+            <div>
+                <p>{{ $comic['description'] }}</p>
+            </div>
         </div>
+
     </div>
 </div>
 @endsection
