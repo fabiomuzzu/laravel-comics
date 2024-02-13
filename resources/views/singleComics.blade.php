@@ -34,7 +34,7 @@
 
         <div class="col-8">
             {{-- Titolo del comics --}}
-            <h2 class="">{{$comic['title']}}</h2>
+            <h2 class="py-4">{{$comic['title']}}</h2>
 
             {{-- Sezione disponibilità e prezzo --}}
             <div class="d-flex">
@@ -61,6 +61,74 @@
         <div class="col-4">
             <div class="text-end fw-bold text-secondary">ADVERTISEMENT</div>
             <img class="w-100" src="{{ Vite::asset('/public/img/adv.jpg') }}" alt="">
+        </div>
+    </div>
+</div>
+
+{{-- Sezione banner proprietà del comic --}}
+<div class="my_bg_gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 py-4">
+                <div class="col-12 py-3">
+                    <h4>Talent</h4>
+                </div>
+                <div class="col-12 d-flex ">
+                    <div class="col-12 d-flex border border-secondary border-start-0 border-end-0">
+                        <div class="col-3">
+                            <p class="">Art by:</p>
+                        </div>
+                        <div class="col-9">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates rem quis vitae soluta enim?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex ">
+                    <div class="col-12 d-flex border border-secondary border-top-0 border-start-0 border-end-0">
+                        <div class="col-3">
+                            <p class="">Art by:</p>
+                        </div>
+                        <div class="col-9">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates rem quis vitae soluta enim?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 py-4">
+                <div class="col-12 py-3">
+                    <h4>Specs</h4>
+                </div>
+                <div class="col-12 d-flex ">
+                    <div class="col-12 d-flex border border-secondary border-start-0 border-end-0">
+                        <div class="col-3">
+                            <p class="">Series:</p>
+                        </div>
+                        <div class="col-9">
+                            <p>{{$comic['series']}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex ">
+                    <div class="col-12 d-flex border border-secondary border-top-0 border-start-0 border-end-0">
+                        <div class="col-3">
+                            <p class="">U.S Price:</p>
+                        </div>
+                        <div class="col-9">
+                            <p>{{$comic['price']}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex ">
+                    <div class="col-12 d-flex border border-secondary border-top-0 border-start-0 border-end-0">
+                        <div class="col-3">
+                            <p class="">On Sale Date:</p>
+                        </div>
+                        <div class="col-9">
+                            <p>{{$comic['sale_date']}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
