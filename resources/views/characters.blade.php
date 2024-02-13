@@ -12,5 +12,6 @@
     <main>
         <h4 class="text-white text-center">{{$character}}</h4>
     </main>
+    @include('partials.footer')
 </body>
 </html>
