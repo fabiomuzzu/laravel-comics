@@ -28,7 +28,16 @@ Route::get('/characters', function () {
 })->name('characters');
 
 Route::get('/cardDetails/{info}', function ($info) {
-    dd($info);
+    $comics = config('comics');
+
+    $comic = null;
+    foreach ($comics as $item) {
+        if ($item['id'] == $info) {
+            $comic = $item;
+        }
+    };
+
+    dd($comic);
 })->name('detail_card');
 
 
