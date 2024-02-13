@@ -20,12 +20,14 @@
         <div class="col-12">
             <div class="card-container">
                 @foreach ($comics as $comic)
-                <div class="my-card">
-                    <img src="{{ $comic['thumb']}}" alt="">
-                    <div class="card-body">
-                        {{$comic['title']}}
+                    <div class="my-card">
+                        <a class="text-decoration-none text-white " href="{{route('detail_card', ['info' => $comic['id']]) }}">
+                            <img src="{{ $comic['thumb']}}" alt="">
+                            <div class="card-body">
+                                {{$comic['title']}}
+                            </div>
+                        </a>
                     </div>
-                </div>
                 @endforeach
             </div>
         </div>

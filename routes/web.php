@@ -27,3 +27,8 @@ Route::get('/characters', function () {
     return view('characters',compact('character'));
 })->name('characters');
 
+Route::get('/cardDetails/{info}', function ($info) {
+    dd($info);
+})->name('detail_card');
+
+
