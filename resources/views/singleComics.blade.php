@@ -39,9 +39,13 @@
             {{-- Sezione disponibilità e prezzo --}}
             <div class="d-flex">
                 {{-- Colonna sinistra --}}
-                <div class="bg-success col-8 d-flex py-3">
-                    <span class="px-5">U.S. Price: <span class="text-white">{{ $comic['price'] }}</span></span>
-                    <span class="px-5">AVAILABLE</span>
+                <div class="bg-success d-flex align-items-center col-8">
+                    <div class="col-6 ">
+                        <span class="px-3">U.S. Price: <span class="text-white">{{ $comic['price'] }}</span></span>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <span class="px-3">AVAILABLE</span>
+                    </div>
                 </div>
                 {{-- Colonna destra --}}
                 <div class="bg-success col-4 d-flex justify-content-end py-3 border-start border-black">
@@ -58,7 +62,7 @@
         </div>
 
         {{-- Sezione advertisement --}}
-        <div class="col-4">
+        <div class="col-4 py-5">
             <div class="text-end fw-bold text-secondary">ADVERTISEMENT</div>
             <img class="w-100" src="{{ Vite::asset('/public/img/adv.jpg') }}" alt="">
         </div>
